@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2dd1f7c5-2fe1-4dd0-9a41-0ce142a2c787" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ImageProject/Stegno/Hide.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ImageProject/Stegno/Hide.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ImageProject/Stegno/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ImageProject/Stegno/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ImageProject/Stegno/Unhide.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ImageProject/Stegno/Unhide.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Stegno/Hide.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stegno/Hide.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Stegno/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stegno/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Stegno/Unhide.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stegno/Unhide.java" afterDir="false" />
-    </list>
+    <list default="true" id="2dd1f7c5-2fe1-4dd0-9a41-0ce142a2c787" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

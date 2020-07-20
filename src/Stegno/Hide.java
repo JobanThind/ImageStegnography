@@ -64,46 +64,7 @@ public class Hide {
       } catch (IOException e) {
          System.out.println("Error: " + e);
       }
-//      //debugging
-//      try {
-////         path="D:\\Taj.jpg"
-//         f = new File(opath);                                   //opening image file
-//         image = ImageIO.read(f);
-//      } catch (IOException e) {
-//         System.out.println("Error: " + e);
-//      }
-//      System.out.println(ans);
-//      count = 0;
-//      for (int i = 0; i < image.getWidth(); i++) {
-//         if (count >= ans.length)
-//            break;
-//         for (int j = 0; j < image.getHeight(); j++) {
-//            Color c = new Color(image.getRGB(i, j));           //getting  r g b value for the specified pixel
-//            int red = c.getRed();
-//            int green = c.getGreen();
-//            int blue = c.getBlue();
-//
-//            if (count < ans.length) {
-//               char[] rs = convert(red);
-//               System.out.print(rs[7]);
-//               count++;
-//
-//            }
-//            if (count < ans.length) {
-//               char[] gs = convert(green);
-//               System.out.print(gs[7]);
-//               count++;
-//            }
-//            if (count < ans.length) {
-//               char[] bs = convert(blue);
-//               System.out.print(bs[7]);
-//               count++;
-//
-//            }
-//         }
-//      }
-//      System.out.println();
-   }
+
 
    private char[] convert(String msg) {
       StringBuilder sb = new StringBuilder();

@@ -2,20 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2dd1f7c5-2fe1-4dd0-9a41-0ce142a2c787" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/description.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/project-template.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ImageProject.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ImageProject/Stegno/Hide.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ImageProject/Stegno/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ImageProject/Stegno/Unhide.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Stegno/Hide.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Stegno/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Stegno/Unhide.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ImageProject/Stegno/Hide.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ImageProject/Stegno/Hide.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ImageProject/Stegno/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ImageProject/Stegno/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ImageProject/Stegno/Unhide.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ImageProject/Stegno/Unhide.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Stegno/Hide.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stegno/Hide.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Stegno/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stegno/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Stegno/Unhide.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stegno/Unhide.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,6 +29,7 @@
   <component name="ProjectId" id="1c83Ajt6CJRLm0sxNbBX4AfziQm" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RunDashboard">
@@ -50,7 +44,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Delivery">
+    <configuration name="Delivery" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Delivery" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="Stegno.Main" />
       <module name="ImageProject" />
@@ -63,6 +63,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Delivery" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>

@@ -8,39 +8,6 @@ import javax.imageio.ImageIO;               //used to perform read write operati
 
 public class Hide {
 
-   private char[] convert(String msg) {
-      StringBuilder sb = new StringBuilder();
-      for (int i = 0; i < msg.length(); i++) {
-         char c = msg.charAt(i);
-         StringBuilder binstr = new StringBuilder(Integer.toBinaryString((int) c));
-         int l = binstr.length();
-         for (int j = 0; j < 8 - l; j++)
-            binstr.insert(0, 0);
-         sb.append(binstr);
-      }
-      msg = sb.toString();
-      char ans[] = msg.toCharArray();
-      return ans;
-   }
-
-   private char[] convert(int msg) {
-      StringBuilder sb = new StringBuilder();
-      StringBuilder binstr = new StringBuilder(Integer.toBinaryString(msg));
-      int l = binstr.length();
-      for (int j = 0; j < 8 - l; j++)
-         binstr.insert(0, 0);
-      sb.append(binstr);
-      String s = sb.toString();
-      char ans[] = s.toCharArray();
-      return ans;
-   }
-
-   private void pixelset(BufferedImage image, int r, int g, int b, int i, int j) {
-      int p = 0;
-      p =(r << 16) | (g << 8) | b;                             // setting new value of pixel
-      image.setRGB(i, j, p);
-   }
-
    Hide(String path, String opath, String msg) {
       char ans[] = convert(msg);
       BufferedImage image = null;
@@ -58,11 +25,11 @@ public class Hide {
             break;
          for (int j = 0; j < image.getHeight(); j++) {
             String s;
+
             Color c = new Color(image.getRGB(i, j));           //getting  r g b value for the specified pixel
             int red = c.getRed();
             int green = c.getGreen();
             int blue = c.getBlue();
-
             if (count < ans.length) {
                char[] rs = convert(red);
                rs[7] = ans[count];
@@ -136,7 +103,39 @@ public class Hide {
 //         }
 //      }
 //      System.out.println();
+   }
 
+   private char[] convert(String msg) {
+      StringBuilder sb = new StringBuilder();
+      for (int i = 0; i < msg.length(); i++) {
+         char c = msg.charAt(i);
+         StringBuilder binstr = new StringBuilder(Integer.toBinaryString((int) c));
+         int l = binstr.length();
+         for (int j = 0; j < 8 - l; j++)
+            binstr.insert(0, 0);
+         sb.append(binstr);
+      }
+      msg = sb.toString();
+      char ans[] = msg.toCharArray();
+      return ans;
+   }
+
+   private char[] convert(int msg) {
+      StringBuilder sb = new StringBuilder();
+      StringBuilder binstr = new StringBuilder(Integer.toBinaryString(msg));
+      int l = binstr.length();
+      for (int j = 0; j < 8 - l; j++)
+         binstr.insert(0, 0);
+      sb.append(binstr);
+      String s = sb.toString();
+      char ans[] = s.toCharArray();
+      return ans;
+   }
+
+   private void pixelset(BufferedImage image, int r, int g, int b, int i, int j) {
+      int p = 0;
+      p = (r << 16) | (g << 8) | b;                             // setting new value of pixel
+      image.setRGB(i, j, p);
    }
 
 }

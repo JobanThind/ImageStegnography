@@ -8,6 +8,27 @@ import javax.imageio.ImageIO;               //used to perform read write operati
 
 public class Unhide {
 
+   Unhide(String path) {
+      BufferedImage image = null;
+      File f = null;
+      try {
+//         path="D:\\Ouput.jpg"
+         f = new File(path);                                   //opening image file
+         image = ImageIO.read(f);
+      } catch (IOException e) {
+         System.out.println("Error: " + e);
+      }
+      StringBuilder ans = resolve(image, 0, 1, 0, 11, 0, Integer.MAX_VALUE);
+      if (!ans.toString().equals("hide")) {
+         System.out.println("No hidden data");
+         return;
+      } else {
+         ans = resolve(image, 0, 1, 10, 50, 2, Integer.MAX_VALUE);
+         System.out.println("Hidden text is -> " + Secure.decrypt(ans.toString()));
+      }
+
+   }
+
    private char[] convert(int msg) {
       StringBuilder sb = new StringBuilder();
       StringBuilder binstr = new StringBuilder(Integer.toBinaryString(msg));
@@ -86,27 +107,6 @@ public class Unhide {
          }
       }
       return ans;                                  //this will return if we hide or not
-   }
-
-   Unhide(String path) {
-      BufferedImage image = null;
-      File f = null;
-      try {
-//         path="D:\\Ouput.jpg"
-         f = new File(path);                                   //opening image file
-         image = ImageIO.read(f);
-      } catch (IOException e) {
-         System.out.println("Error: " + e);
-      }
-      StringBuilder ans = resolve(image, 0, 1, 0, 11, 0, Integer.MAX_VALUE);
-      if (!ans.toString().equals("hide")) {
-         System.out.println("No hidden data");
-         return;
-      } else {
-         ans = resolve(image, 0, 1, 10, 50, 2, Integer.MAX_VALUE);
-         System.out.println("Hidden text is -> "+ans);
-      }
-
    }
 
 }
